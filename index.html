@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Template</title>
+</head>
+<body>
+  <div id="root"></div>
+  
+  <!-- React and ReactDOM Libraries -->
+  <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  <!-- React code with JSX transformation -->
+  <script type="text/babel">
+    // Create a React element using React.createElement
+    // The first argument is the tag name, the second is properties (null here), the third is children or inner content.
+    const element = React.createElement('p', null, 'Seize the day');
+
+    // ReactDOM.render is used to render a React element into the DOM.
+    // The first argument is the element to render, and the second is the target DOM node to mount the React element.
+    ReactDOM.render(element, document.getElementById('root'));
+  </script>
+</body>
+</html>
